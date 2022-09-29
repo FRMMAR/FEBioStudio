@@ -1365,10 +1365,10 @@ void CRepositoryPanel::loadingPageProgress(qint64 bytesSent, qint64 bytesTotal)
 
 #else
 
-CRepositoryPanel::CRepositoryPanel(CMainWindow* pwnd, QWidget* parent){}
+CRepositoryPanel::CRepositoryPanel(CMainWindow* pwnd, QDockWidget* parent){}
 CRepositoryPanel::~CRepositoryPanel(){}
 void CRepositoryPanel::OpenLink(const QString& link) {}
-// void CRepositoryPanel::Raise() {}
+void CRepositoryPanel::Raise() {}
 void CRepositoryPanel::SetModelList(){}
 void CRepositoryPanel::ShowMessage(QString message) {}
 void CRepositoryPanel::ShowWelcomeMessage(QByteArray messages) {}
@@ -1392,6 +1392,7 @@ void CRepositoryPanel::on_actionDownload_triggered() {}
 void CRepositoryPanel::on_actionOpen_triggered() {}
 void CRepositoryPanel::on_actionOpenFileLocation_triggered() {}
 void CRepositoryPanel::on_actionDelete_triggered() {}
+void CRepositoryPanel::on_actionCopyPermalink_triggered() {}
 void CRepositoryPanel::on_actionUpload_triggered() {}
 void CRepositoryPanel::on_actionSearch_triggered() {}
 void CRepositoryPanel::on_actionClearSearch_triggered() {}
